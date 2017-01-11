@@ -3,38 +3,105 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="This webside is made for my cat Bobo">
-    <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/b168e74bb7.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
 
     <title>Welcome | Bobo Is A Cat</title>
 
     <link rel="stylesheet" href="css/style.css">
+	<link rel="reset" href="css/reset.css">
   </head>
   <body>
 
     <header>
-      <h1>Logo</h1>
-      <h2>Bobo Is A Cat</h2>
+	<div class="logoContainer">
+		<img id="logo" src="images/logo3.png"></img>
+	</div>
+      
+      <h2 id="slogan">Bobo Is A Cat</h2>
+
     </header>
+	<div class="menueLine">
+	  <i class="fa fa-paw" aria-hidden="true"></i>
+	</div>
 
     <div id="container">
-      <aside class="timeline"> 
-        <h4>07:00 Wake up</h4>
-        <h4>07:30 Breakfast</h4>
-        <h4>08:00 Go to work</h4>
-        <h4>12:00 Lunch break</h4>
-        <h4>17:00 Going home</h4>
-        <h4>18:30 Dinner</h4>
-        <h4>19:00 Play time</h4>
-        <h4>21:00 Shower</h4>
-        <h4>22:00 Bed time</h4>
-      </aside>
-      <main>
+      <main class="timeline">
+		<div class="timelineItem">
+			<i class="fa fa-calendar" aria-hidden="true"></i>
+			<div class="verticalLine"></div>
+			<i class="fa fa-sun-o" aria-hidden="true"></i>
+			<p><h4>07:00 Wake up</h4</p>
+				<!--起床图片放这里-->
+		</div>
 
-      </main>
+		<div class="timelineItem">
+			<div class="verticalLine"></div>
+			<i class="fa fa-cutlery" aria-hidden="true"></i>
+	        <p><h4>07:30 Breakfast</h4></p>
+			<!--吃饭图片放这里-->
+		</div>
+
+		<div class="timelineItem">
+			<div class="verticalLine"></div>
+			<i class="fa fa-briefcase" aria-hidden="true"></i>
+			<p><h4>08:00 Go to work</h4></p>
+			<!--上班图-->
+		</div>
+
+		<div class="timelineItem">
+			<div class="verticalLine"></div>
+			<i class="fa fa-coffee" aria-hidden="true"></i>
+			<p><h4>12:00 Lunch break</h4></p>
+			<!--喝咖啡图-->
+		</div>
+
+		<div class="timelineItem">
+			<div class="verticalLine"></div>
+			<i class="fa fa-car" aria-hidden="true"></i>
+			<p><h4>17:00 Going home</h4></p>
+			<!--回家图-->
+		</div>
+
+		<div class="timelineItem">
+			<div class="verticalLine"></div>
+			<i class="fa fa-beer" aria-hidden="true"></i>
+			<p><h4>18:30 Dinner</h4></p>
+			<!--晚餐图-->
+		</div>
+
+		<div class="timelineItem">
+			<div class="verticalLine"></div>
+			<i class="fa fa-gamepad" aria-hidden="true"></i>
+			<p><h4>19:00 Play time</h4></p>
+			<!--游戏图-->
+		</div>
+
+		<div class="timelineItem">
+			<div class="verticalLine"></div>
+			<i class="fa fa-bath" aria-hidden="true"></i>
+	        <p><h4>21:00 Shower</h4></p>
+			<!--洗澡图-->
+		</div>
+
+		<div class="timelineItem">
+			<div class="verticalLine"></div>
+			<i class="fa fa-bed" aria-hidden="true"></i>
+	        <p><h4>22:00 Bed time</h4></p>
+			<!--睡觉图-->
+		</div>
+
+	</main>
+      <section id="bottomLinks">
+		  <div class="links">About Bobo</div>
+		  <div class="links">Gallery</div>
+		  <div class="links">Bobo Calender</div>
+		  <div class="links">About Hayley</div>
+      </section>
 
     </div>
 
-    <footer>@Hayleyxyo 2016. Melbourne</footer>
+    <footer><p class="copyright">@Hayleyxyo 2017. Melbourne</p></footer>
     <script src="js/homepage.js" charset="utf-8"></script>
   </body>
 </html>
