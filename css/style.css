@@ -5,58 +5,225 @@ body {
   padding: 0;
 }
 
+
+/************* Header  **************/
 header {
-  background-color: pink;
+  background-color: #D3B4A1;
   padding: 0;
   margin: 0;
-  min-height: 500px;
+  height: 93vh;  /* header will always be full screen when you open the website*/
+  /*width: 100%;
+  background-image: url("images/moment1.JPG");
+  background-size: cover;*/
 }
 
 .logoContainer {
 	display: flex;
-	display: inline-block;
+	justify-content: center;
+	/*width: 100%;*/
+	box-sizing: border-box;
+	padding-top: 15vh;
+	/*background-image: url("images/moment1.JPG");*/
+	/*background-size: cover;*/
+	/*background-position: ;*/
+	/*height: 100vh;*/
+	/*width: 100%;*/
 }
 
 #logo {
-
-	height: 200px;
+	height: 50vh;
+	/*width: 50%;*/
 	width: auto;
+	/*min-height: 50vh;*/
+}
+
+#black {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: black;
+	height:100%;
+	min-height: 100vh;
+	width: 100%;
+}
+
+#black.active {
+	display: block;
+}
+
+/*the light thing*/
+
+/*********** Header ends **********/
+
+/*********** Other Header **********/
+
+#otherPageHeader {
+	background-color: #D3B4A1;
+    padding: 0;
+    margin: 0;
+    min-height: 20vh;
+}
+
+
+.logoContainerOtherPage {
+	display: flex;
+	position: absolute;
+	top: 1%;
+	left: 1%;
+}
+
+#logoOtherPage {
+	height: 150px;     /*change to %%%%%*/
+	width: auto;
+}
+
+/*********** Other Header ends **********/
+
+
+/*********** Sidebar ************/
+
+.sideBar {
+	background-color: rgba(0, 0, 0, 0.5);;
+ 	color: white;
+  	width: 22%;
+  	height: 35px;
+	position: absolute;
+  	right: -18%;
+	display: flex;
+	flex-direction: row;
+	position:fixed;
+}
+
+i {
+	color: white;
+	padding: 10px 20px;
+}
+
+i.open {
+	color: #107999;
+}
+
+
+.sideBar a {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 30px;
+	color: white;
+	font-family: 'Kranky', cursive;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+
+.sideBar a:visited {
+	color: white;
+}
+
+.sideBar.open {
+	right:0;
+}
+
+#slideMenuWakeUp {
+	top:20%;
+}
+
+#slideMenuBreakfast {
+	top:25%;
+}
+
+#slideMenuGoToWork {
+	top:30%;
+}
+
+#slideMenuLunchBreak {
+	top:35%;
+}
+
+#slideMenuGoingHome {
+	top:40%;
+}
+
+#slideMenuCookingDinner {
+	top:45%;
+}
+
+#slideMenuPlayTime {
+	top:50%;
+}
+
+#slideMenuShowerTime {
+	top:55%;
+}
+
+#slideMenuBedTime {
+	top:60%;
+}
+
+
+
+
+
+/********** sideBar ends *************/
+
+/*********** Menue Line  ***********/
+.menueLine {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 30%;
+	padding-right: 35%;
+}
+
+.about {
+	font-family: 'Kranky', cursive;
+	font-size: 1.5rem;
+	color: #6b5f54;
+	padding: 10px 20px;
 
 }
 
-#slogan {
-	margin: 0;
-	text-align:
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #6b5f54;
 }
 
 .menueLine {
 	min-height: 50px;
-	text-align: center;
-	font-size: 50px;
+	/*text-align: center;*/
 }
 
+
+/*********** Menu Line ends  ***********/
+
+/********** Main Contents ***********/
+
 #container {
-  background: grey;
   height: 100%;  /*body的高度*/
 }
 
 .timeline {
+	display: flex;
+	flex-direction: column;
 	text-align: center;
-	color: yellow;
+	color: red;
 }
 
 .timelineItem {
-	background-color: green;
-	display: flex;
-	flex-direction: column;
+	background-color: #f7f7f9;
 	margin: 5px 0;
-
-}
-.verticalLine {
-	border-left: 1px solid red;
-	height: 100px;
 	width: 100%;
-	margin-left: 507px;
+	height: 100vh;
+}
+
+img {
+	align-items: center;
 }
 
 #bottomLinks {
@@ -70,6 +237,10 @@ header {
 	padding: 20px 10px;
 }
 
+/********** Main Contents ends ***********/
+
+/********** Footer *************/
+
 footer {
 	margin: 0;
 	padding: 30px;
@@ -81,5 +252,201 @@ footer {
 	text-align: center;
 }
 
+/************ Footer ends **************/
+
+/************ About Bobo **************/
+
+#boboDescription {
+	font-family: 'Kranky', cursive;
+	font-size: 6rem;
+	width: 100%;
+	height: 100vh;
+	background-color: pink;
+	text-align: center;
+	padding-top: 1.5em;
+
+}
+
+#boboDescription h2 em {
+	font-size: 8rem;
+}
+
+/************ About Bobo end **********/
+
+
+/************** Moments *************/
+
+
+
+/*#galleryPart {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}*/
+
+#galleryPart {
+	min-height:500px;
+	width:100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	padding: 0 10%;
+}
+
+
+.cover {
+	background-size: cover;
+	background-position: center center;
+}
+
+.imageDiv {
+	width: 30%;
+	margin: 1%;
+}
+
+.imageHoverDiv:hover {
+	opacity: 0.3;
+	background-color: red;
+}
+
+.imageHoverDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Hover text is hidden by default */
+.imageHoverText {
+	visibility: hidden;
+	color: white;
+}
+
+.imageHoverDiv:hover .imageHoverText {
+	visibility: visible;
+}
+
+
+
+
+
+/************ Moments ends **********/
+
+
+/************** @Hayley ***************/
+html {
+	font-size: 14px;
+}
+
+
+#hayleyMain {
+	width: 100%;
+	min-height: 100vh;
+	font-family: 'Kranky', cursive;
+	background-color:pink;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contactBobo {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.contactBobo h1 {
+	font-size: 4rem;
+	padding-bottom: 2em;
+}
+
+.formSection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+input[type="text"],
+input[type="email"] {
+	width: 50%;
+	margin-bottom: 10px;
+	padding: 0.5em;
+	font-weight: lighter;
+	font-size: 1em;
+	border: 1px solid #443534;
+}
+
+
+
+textarea {
+	width: 50%;
+	height: 60px;
+	margin-bottom: 10px;
+	padding: 0.5em;
+	border: 1px solid #443534;
+	font-weight: lighter;
+	font-size: 1rem;
+}
+
+#submitButton {
+	margin-top: 30px;
+	cursor: pointer;
+	text-align: center;
+	color: white;
+	display: block;
+	padding: 1em;
+	width: 30%;
+	background: tomato;
+	font-family: 'Kranky', cursive;
+	font-size: 16px;
+	box-shadow: none;
+	border-radius: 4px;
+	border-style: none;
+
+}
+
+/************* @Hayley ends *************/
+
+
+
+
+
+
+
+
 
 /*********** Mobile ************/
+/*十五行*/
+
+
+	/*header {
+		min-height: 15vh;
+	}
+
+	.logoContainer {
+		display: flex;
+		position: absolute;
+		top: 1%;
+		left: 30%;
+	}
+
+	#logo {
+		height: 200px;
+		width: auto;
+	}
+
+	.menueLine {
+		display: none;
+	}
+
+	.mobileMenu {
+		display: flex;
+		flex-direction: column;
+
+	}*/

@@ -3,103 +3,148 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="This webside is made for my cat Bobo">
+	<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Kranky" rel="stylesheet">
 	<script src="https://use.fontawesome.com/b168e74bb7.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
 
     <title>Welcome | Bobo Is A Cat</title>
 
-    <link rel="stylesheet" href="css/style.css">
-	<link rel="reset" href="css/reset.css">
   </head>
   <body>
 
+<div id="black"></div>
     <header>
-	<div class="logoContainer">
-		<img id="logo" src="images/logo3.png"></img>
+		<div class="logoContainer">
+			<img id="logo" src="images/bobologo.png"></img>
+		</div>
+
+			<div id="theWholeThing">
+
+				<div id="slideMenuWakeUp" class="sideBar">
+					<i class="fa fa-sun-o" aria-hidden="true"></i>
+					<a href="#wakeUp">07:00 Wake Up</a>
+				</div>
+
+				<div id="slideMenuBreakfast" class="sideBar">
+					<i class="fa fa-cutlery" aria-hidden="true"></i>
+					<a href="#breakfast">07:30 Breakfast</a>
+				</div>
+
+				<div id="slideMenuGoToWork" class="sideBar">
+					<i class="fa fa-briefcase" aria-hidden="true"></i>
+					<a href="#goToWork">08:00 Go To Work</a>
+				</div>
+
+				<div id="slideMenuLunchBreak" class="sideBar">
+					<i class="fa fa-coffee" aria-hidden="true"></i>
+					<a href="#lunchBreak">12:00 Lunch Break</a>
+				</div>
+
+				<div id="slideMenuGoingHome" class="sideBar">
+					<i class="fa fa-beer" aria-hidden="true"></i>
+					<a href="#goingHome">17:00 Going Home</a>
+				</div>
+
+				<div id="slideMenuCookingDinner" class="sideBar">
+					<i class="fa fa-car" aria-hidden="true"></i>
+					<a href="#cookingDinner">18:30 Cooking Dinner</a>
+				</div>
+
+				<div id="slideMenuPlayTime" class="sideBar">
+					<i class="fa fa-gamepad" aria-hidden="true"></i>
+					<a href="#playTime">19:00 Play Time</a>
+				</div>
+
+				<div id="slideMenuShowerTime" class="sideBar">
+					<i class="fa fa-bath" aria-hidden="true"></i>
+					<a href="#showerTime">21:00 Shower Time</a>
+				</div>
+
+				<div id="slideMenuBedTime" class="sideBar">
+					<i class="fa fa-bed" aria-hidden="true"></i>
+					<a href="#bedTime">22:00 Bed Time</a>
+				</div>
+			</div>
+	    </header>
+
+
+		<div class="menueLine">
+		  <!-- <i class="fa fa-paw" aria-hidden="true"></i> -->
+		  <h2 class="about"><a href="aboutBobo.html">About Bobo</a></h2>
+		  <h2 class="about"><a href="gallery.html">Gallery</a></h2>
+		  <h2 class="about"><a href="hayley.html">@Hayley</a></h2>
+		</div>
+
+		<!-- <div class="mobileMenu">
+		  <i class="fa fa-paw" aria-hidden="true"></i>
+	  	  <h2 class="about"><a href="#">About Bobo</a></h2>
+	  	  <h2 class="about"><a href="#">Gallery</a></h2>
+	  	  <h2 class="about"><a href="#">@Hayley</a></h2>
+		</div> -->
+
+	    <div id="container">
+	      <main class="timeline">
+			<div id="wakeUp" class="timelineItem">
+				<i class="fa fa-calendar" aria-hidden="true"></i>
+				<i class="fa fa-sun-o" aria-hidden="true"></i>
+				<p><h4>07:00 Wake up</h4</p>
+				<img src="images/wakeup.gif" alt="Bobo Wake Up">
+			</div>
+
+			<div id="breakfast" class="timelineItem">
+				<i class="fa fa-cutlery" aria-hidden="true"></i>
+		        <p><h4>07:30 Breakfast</h4></p>
+				<img src="images/breakfast.gif" alt="Bobo Breakfast">
+			</div>
+
+			<div id="goToWork"class="timelineItem">
+				<i class="fa fa-briefcase" aria-hidden="true"></i>
+				<p><h4>08:00 Go to work</h4></p>
+				<img src="images/gotowork.gif" alt="Bobo Go To Work">
+			</div>
+
+			<div class="timelineItem">
+				<i id="lunchBreak" class="fa fa-coffee" aria-hidden="true"></i>
+				<p><h4>12:00 Lunch break</h4></p>
+				<img src="images/coffee.gif" alt="Bobo Drinks Coffee">
+			</div>
+
+			<div class="timelineItem">
+				<i id="goingHome" class="fa fa-car" aria-hidden="true"></i>
+				<p><h4>17:00 Going home</h4></p>
+				<img src="images/gohome.gif" alt="Bobo Goes Home">
+			</div>
+
+			<div class="timelineItem">
+				<i id="cookingDinner"class="fa fa-beer" aria-hidden="true"></i>
+				<p><h4>18:30 Cooking Dinner</h4></p>
+				<img src="images/dinner.gif" alt="Bobo Make Dinner">
+			</div>
+
+			<div class="timelineItem">
+				<i id="playTime" class="fa fa-gamepad" aria-hidden="true"></i>
+				<p><h4>19:00 Play time</h4></p>
+				<img src="images/playtime.gif" alt="Bobo Plays Game">
+			</div>
+
+			<div class="timelineItem">
+				<i id="showerTime" class="fa fa-bath" aria-hidden="true"></i>
+		        <p><h4>21:00 Shower Time</h4></p>
+				<img src="images/shower.gif" alt="Bobo Takes Shower">
+			</div>
+
+			<div class="timelineItem">
+				<i id="bedTime" class="fa fa-bed" aria-hidden="true"></i>
+		        <p><h4>22:00 Bed time</h4></p>
+				<img src="images/sleep.gif" alt="Bobo Sleep">
+			</div>
+
+		</main>
+
 	</div>
-      
-      <h2 id="slogan">Bobo Is A Cat</h2>
-
-    </header>
-	<div class="menueLine">
-	  <i class="fa fa-paw" aria-hidden="true"></i>
-	</div>
-
-    <div id="container">
-      <main class="timeline">
-		<div class="timelineItem">
-			<i class="fa fa-calendar" aria-hidden="true"></i>
-			<div class="verticalLine"></div>
-			<i class="fa fa-sun-o" aria-hidden="true"></i>
-			<p><h4>07:00 Wake up</h4</p>
-				<!--起床图片放这里-->
-		</div>
-
-		<div class="timelineItem">
-			<div class="verticalLine"></div>
-			<i class="fa fa-cutlery" aria-hidden="true"></i>
-	        <p><h4>07:30 Breakfast</h4></p>
-			<!--吃饭图片放这里-->
-		</div>
-
-		<div class="timelineItem">
-			<div class="verticalLine"></div>
-			<i class="fa fa-briefcase" aria-hidden="true"></i>
-			<p><h4>08:00 Go to work</h4></p>
-			<!--上班图-->
-		</div>
-
-		<div class="timelineItem">
-			<div class="verticalLine"></div>
-			<i class="fa fa-coffee" aria-hidden="true"></i>
-			<p><h4>12:00 Lunch break</h4></p>
-			<!--喝咖啡图-->
-		</div>
-
-		<div class="timelineItem">
-			<div class="verticalLine"></div>
-			<i class="fa fa-car" aria-hidden="true"></i>
-			<p><h4>17:00 Going home</h4></p>
-			<!--回家图-->
-		</div>
-
-		<div class="timelineItem">
-			<div class="verticalLine"></div>
-			<i class="fa fa-beer" aria-hidden="true"></i>
-			<p><h4>18:30 Dinner</h4></p>
-			<!--晚餐图-->
-		</div>
-
-		<div class="timelineItem">
-			<div class="verticalLine"></div>
-			<i class="fa fa-gamepad" aria-hidden="true"></i>
-			<p><h4>19:00 Play time</h4></p>
-			<!--游戏图-->
-		</div>
-
-		<div class="timelineItem">
-			<div class="verticalLine"></div>
-			<i class="fa fa-bath" aria-hidden="true"></i>
-	        <p><h4>21:00 Shower</h4></p>
-			<!--洗澡图-->
-		</div>
-
-		<div class="timelineItem">
-			<div class="verticalLine"></div>
-			<i class="fa fa-bed" aria-hidden="true"></i>
-	        <p><h4>22:00 Bed time</h4></p>
-			<!--睡觉图-->
-		</div>
-
-	</main>
-      <section id="bottomLinks">
-		  <div class="links">About Bobo</div>
-		  <div class="links">Gallery</div>
-		  <div class="links">Bobo Calender</div>
-		  <div class="links">About Hayley</div>
-      </section>
-
-    </div>
 
     <footer><p class="copyright">@Hayleyxyo 2017. Melbourne</p></footer>
     <script src="js/homepage.js" charset="utf-8"></script>
