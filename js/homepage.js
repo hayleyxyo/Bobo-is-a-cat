@@ -3,7 +3,7 @@ $(document).ready(start);
 var timeOut = false;
 
 function start() {
-	$(".sideBar").click(sideBarButton);
+	$(".sideBar").hover(sideBarButton);
 	$(".sideBar a").click(scrollDownToPage);
 	$(".sideBar").mouseleave(hideSideBar)
 }
@@ -18,7 +18,7 @@ function sideBarButton(event) {
 	// $(".sideBar").removeClass("open");
 	// $(this).toggleClass("open", 1000);
 	// $(this.children[0]).toggleClass("open");
-
+	//
 	// if (!timeOut) {
 	// 	timeOut = window.setTimeout(function() {
 	// 		timeOut = null;
