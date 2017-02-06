@@ -1,5 +1,5 @@
 
-/*************  @Hayley  **************/
+/*************  @bobo  **************/
 
 
 $(document).ready(start);
@@ -12,7 +12,7 @@ $(document).ready(start);
 		$(".formSection").submit(function(event) {
 			event.preventDefault();
 			$.ajax({
-				url: "http://tramsformer.com.au/ga/fewd/api.php",
+				url: "php/contact.php",
 				data: $('#formSection').serialize(),
 				success: function(){
 
@@ -22,4 +22,4 @@ $(document).ready(start);
 	});
 }
 
-/************ @Hayley Ends ************/
+/************ @bobo Ends ************/
